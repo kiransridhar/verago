@@ -105,3 +105,29 @@ footer a { color: var(--muted); }
   .words td:nth-child(2) { border-left: 1px solid var(--line); border-radius: 12px 0 0 12px; }
   .words th:first-child { display: none; }
 }
+
+/* Phrase pages, alphabet pages and the accuracy note (Nov 2026). */
+.topics.sections { margin: 16px 0 4px; }
+.topics.sections a { border-width: 2px; font-weight: 700; }
+.phrase { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; margin: 14px 0; }
+.phrase h2 { font-size: 18px; margin: 0 0 10px; color: #4A3628; }
+.said { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+.said strong { display: block; font-size: 22px; }
+.said .script { display: block; color: var(--maroon); font-size: 19px; }
+.gloss { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.gloss li { display: flex; flex-direction: column; background: var(--cream); border: 1px solid var(--line); border-radius: 10px; padding: 6px 10px; }
+.gloss .script { color: var(--maroon); font-size: 15px; }
+.gloss em { font-style: normal; color: var(--muted); font-size: 14px; }
+.letters .letter { font-size: 30px; color: var(--maroon); font-weight: 700; width: 64px; text-align: center; }
+.letters .sound { font-weight: 700; white-space: nowrap; }
+.letters .mean-inline { display: block; color: var(--muted); font-size: 14px; }
+.native-name { color: var(--muted); font-weight: 400; font-size: 16px; }
+.words .mean small { display: block; color: var(--muted); font-size: 13px; }
+.note { font-size: 14px; color: var(--muted); background: #fff; border: 1px dashed var(--line); border-radius: 12px; padding: 10px 12px; margin: 24px 0 0; }
+/* The alphabet table keeps its first column on phones (the word tables hide
+   their picture column there). */
+@media (max-width: 560px) {
+  .words.letters th:first-child { display: table-cell; }
+  .words.letters td:nth-child(2) { border-left: 0; border-radius: 0; }
+  .letters .letter { width: 52px; font-size: 26px; }
+}
