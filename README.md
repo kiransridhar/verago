@@ -1,7 +1,8 @@
 # Verago — learning site
 
-Free Kannada, Tamil, Marathi, Hindi and Gujarati word lists with audio:
-one page per language and per topic (381 pages), published with GitHub Pages
+Free word lists, phrases, alphabets and printable worksheets with audio for
+nine Indian languages (Kannada, Marathi, Tamil, Hindi, Gujarati, Telugu,
+Malayalam, Bengali, Punjabi), published with GitHub Pages
 at https://kiransridhar.github.io/verago/.
 
 **Generated — don't edit by hand.** The pages are built from the app's data

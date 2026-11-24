@@ -1,6 +1,7 @@
 // Verago learning site: 🔊 buttons play the word's clip (one at a time), and
 // "Hide meanings" blurs the English column for self-testing; tap a blurred
-// meaning to reveal it.
+// meaning to reveal it. The Print button on printable pages opens the
+// browser's print window.
 (function () {
   var current = null;
   document.addEventListener('click', function (e) {
@@ -14,6 +15,7 @@
       audio.play().catch(function () { btn.classList.remove('playing'); });
       return;
     }
+    if (e.target.closest('.print-btn')) { window.print(); return; }
     var toggle = e.target.closest('.toggle-meanings');
     if (toggle) {
       var on = document.body.classList.toggle('hide-meanings');
